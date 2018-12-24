@@ -89,7 +89,7 @@ router.get("/api/carts/:userid", function (req, res) {
     // "Quantity: " + userObj.carts[0].quantity + "\n" );
 
     res.render("carts", userObj);
-    // res.json({carts : data});
+    // return res.json({carts : data});
   });
 });
 router.get("/api/cartcheck/:userid", function (req, res) {

@@ -60,6 +60,5 @@ values(001, "I ordered the Gaya Goddess Duster for a weekend get away. This cove
 (010, "Bought the Wool Blend Coat and totally worth the buy. Such a toasty coat, and made really nicely.", "Claire", "Boston")
 ;
 
-insert into orders (userid, products, quantity) values ("mbvj", "Checked Trench Coat", "Four");
 
 

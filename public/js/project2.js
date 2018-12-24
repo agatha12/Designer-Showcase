@@ -377,6 +377,12 @@ $(function () {
         }
     });
 });
+$(function(){
+$("#modalclosebutton").on("click", function(){
+    location.reload();
+    console.log("hola")
+})
+})
 
 $(function () {
     $("#shoppingcart").on("click", function (event) {
@@ -387,8 +393,8 @@ $(function () {
         // var userid = newOrder.userid
         $.get("/api/carts/" + userid, function (data) {
 
-            console.log(data);
-
+            console.log("hi" + data);
+                console.log("hi")
             // var cartuserID = data.carts[0].userid;
             // var cartProduct = data.carts[0].products;
             // var cartQuantity = data.carts[0].quantity;
@@ -399,7 +405,10 @@ $(function () {
             // $("#user-dump").append(cartuserID);
             // $("#quantity-dump").append(cartQuantity);
             // $("#product-dump").append(cartProduct);
-        });
+        }).then(function(data){
+            console.log("hi" + data);
+            console.log("hi")
+        })
     })
 });
 
